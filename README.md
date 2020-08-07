@@ -29,29 +29,20 @@ Things you may want to cover:
 |nickname|string|null: false|
 
 ### Association
--has_many :group
+-has_many :groups
 -has_many :groups_users
-
+-has_many :comments
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |tweet_id|integer|null: false, foreign_key: true|
-
-### Association
-- belongs_to :tweet
-- belongs_to :user
-
-## tweetsテーブル
-|Column|Type|Options|
-|------|----|-------|
 |image|text||
-|text|text||
-
 ### Association
+- belongs_to :groups
 - belongs_to :user
-- has_many :comments
+
 * ## groups_usersテーブル
 
 |Column|Type|Options|
