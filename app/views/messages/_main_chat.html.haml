@@ -2,9 +2,9 @@
   .right-header
     .group-name
       test 
-      %ul{class:"member-info"}   
+      %ul.member-info  
         Member :  
-        %li{class:"member"}    
+        %li.member  
           masa
     =link_to '#', class:"edit" do
       edit
@@ -32,7 +32,7 @@
       .form-message
         %input.form-content{:name => "message", :placeholder => "type a message", :type => "text", :value => ""}/
         .form-info
-          %label{class: "hidden"}
+          %label.hidden
             = icon('far', 'image', class:"form-icon")
             %input{type: "file", class:"file"}
       %input.form-submit{"name": "commit", "type": "submit", "value": "Send"}
