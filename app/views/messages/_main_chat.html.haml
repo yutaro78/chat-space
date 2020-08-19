@@ -1,0 +1,38 @@
+.chat
+  .right-header
+    .group-name
+      test 
+      %ul{class:"member-info"}   
+        Member:
+        %li{class:"member"}    
+          masa
+    =link_to '#', class:"edit" do
+      edit
+  .message
+    .message-info
+      .message-frame
+        .info-user-name
+          masa
+        .info-time
+          2020/08/17(mon)17:00:00
+    .message-box
+      .message-content
+        おはよう
+    .message-info
+      .message-frame
+        .info-user-name
+          masa
+        .info-time
+          2020/08/17(mon)17:00:00
+    .message-box
+      .message-content
+        おはよう
+  .footer
+    %form
+      .form-message
+        %input.form-content{:name => "message", :placeholder => "type a message", :type => "text", :value => ""}/
+        .form-info
+          %label{class: "hidden"}
+            = icon('far', 'image', class:"form-icon")
+            %input{type: "file", class:"file"}
+      %input.form-submit{"name": "commit", "type": "submit", "value": "Send"}
