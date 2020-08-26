@@ -4,8 +4,9 @@
       = @group.name 
       %ul.member-info  
         Member : 
-        - @group.users.each do |user|
-          = user.name
+        %li.member
+          - @group.users.each do |user|
+            = user.name
     = link_to 'Edit' , edit_group_path(@group), class:"edit" 
 
   .messages
