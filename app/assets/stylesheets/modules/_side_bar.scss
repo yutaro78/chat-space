@@ -4,10 +4,10 @@
 }
 
 .side-bar_user{
-background-color: #253141;
-height:100px;
-padding:0 20px;
-display:flex;
+  background-color: #253141;
+  height:100px;
+  padding:0 20px;
+  display:flex;
   align-items: center;
 }
 .side-bar-header{
@@ -18,9 +18,9 @@ display:flex;
   color: #ffffff;
 }
 .user-name{
-margin-left: 5px;
-font-size:16px;
-font-weight: bold;
+  margin-left: 5px;
+  font-size:16px;
+  font-weight: bold;
 }
 .icons{
   width:60px;
@@ -36,15 +36,18 @@ font-weight: bold;
 }
 .side-bar_group{
   background-color: #2f3e51;
-  height:calc(100% - 100px);
+  height:calc(100vh - 100px);
   padding:0 20px;
 }
-.group{
+.Group{
   padding:20px 0 40px;
   box-sizing:border-box;
-  
+  text-decoration: none;
 }
-
+.group-link{
+  text-decoration: none;
+  color: #fff;
+}
 .group_name{
   font-size:15px;
   
