@@ -21,7 +21,7 @@ $(function(){
       return html;
     } else {
       let html =
-      `<div class="messages-path data-message-id=${message.id}">
+      `<div class="messages-path" data-message-id=${message.id}>
         <div class="message-info">
           <div class="info-user-name">
             ${message.user_name}
@@ -54,6 +54,7 @@ $(function(){
     })
     .done(function(data){
       let html = buildHTML(data);
+      // console.log(html)
       $('.messages').append(html);      
       $('form')[0].reset();
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
